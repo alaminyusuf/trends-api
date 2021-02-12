@@ -1,0 +1,24 @@
+<div class="wrapper has-background-black">
+  <div class="container">
+    <section class="section is-family-monospace">
+        <h1 class="title has-text-white">
+          Hello World
+        </h1>
+        <p class="subtitle has-text-light">
+          My first website with <strong class="has-text-light">Bulma</strong>!
+        </p>
+    </section>
+    <section class="section">
+    {{#each users}}
+        <div class="card my-5">
+        <header class="card-header">
+          <h1 class="card-header-title">
+            {{name}}
+          </h1>
+        </header>
+      </div>
+    {{/each}}
+    </section>
+  </div>
+</div>
+{{ footer}}

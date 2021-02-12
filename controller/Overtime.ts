@@ -4,7 +4,7 @@ import gtrends from 'google-trends-api';
 class IntrestOverTime {
   getOverTime(req: Request, res: Response) {
     gtrends
-      .interestOverTime({ keyword: "Women's march" })
+      .interestOverTime({ keyword: 'Technology' })
       .then(function (results: Response) {
         res.status(200).json({ results });
       })
